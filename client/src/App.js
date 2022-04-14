@@ -42,11 +42,12 @@ setserver('! Enter a valid amount')
  } }
  return(
 <div className="App">
- <h1>WELCOME TO M-PESA STK PUSH TEST PROJECT</h1>
+  
+ <h1>CLICK TO DEPOSIT</h1>
  <div  className='logo'>
-   <img src='lipa-na-mpesa.jpg'></img>
+   <img src='logo.svg'></img>
  </div>
-<button onClick={togglepopup}>Click to Deposit</button>
+<button  className='button' onClick={togglepopup}>Click to Deposit</button>
 {isopen && <Popup 
  handleClose={
    

@@ -2,7 +2,7 @@
   text-align: center;
   
 }
-.whole
+
 
 .App h1{
   color: green;
@@ -86,6 +86,21 @@ color: white;
   pointer-events: none;
 }
 
+.button
+{
+  
+  background-color: yellow;
+  font-weight: bold;
+  font-size: 25px;
+border-radius: 10px;
+  width: 400px;
+  height: 40px;
+}
+.button:hover
+{
+  background-color: purple;
+  color: white;
+}
 @media (max-width:700px) {
   
 .image
@@ -133,6 +148,11 @@ color: white;
   
   padding: 2px;
   margin: 7px;
+}
+.button
+{
+  font-size: 20px;
+  width: 250px;
 }
 }
 
