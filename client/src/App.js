@@ -66,7 +66,7 @@ setserver('! Enter a valid amount')
  <input type="number"   required placeholder='Amount(ksh)'   value={amount} name="amount" onChange={(e)=>setAmount(e.target.value)}
  ></input>
  </div>
-
+<br></br>
  
  <button type='submit'>PAY VIA M-PESA</button>
 </form>
