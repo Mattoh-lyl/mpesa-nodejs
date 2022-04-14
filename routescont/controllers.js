@@ -78,7 +78,7 @@ The method defined is experted to the mpesa routes where it corressponds to the 
        PartyA:pno,    
         PartyB:'174379',    
       PhoneNumber:pno,    
-      CallBackURL:"https://361a-105-161-35-128.ngrok.io/callback",// callback url, your are supposed to use your domain url
+      CallBackURL:"https://trympesa.herokuapp.com//callback",// callback url, your are supposed to use your domain url
       // the /callback is the url to recieve the safariom response about the transaction
       
       AccountReference:"mpesa app payment test",    
