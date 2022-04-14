@@ -127,7 +127,7 @@ else{
     
     transactiondetails .save((err, doc) => {
         if (!err)
-            req.flash('success', 'Transaction recorded');
+            console.log('success: Transaction recorded');
             
         else
             console.log( err);
