@@ -23,7 +23,7 @@ setserver('! Enter a valid amount')
    }
    else{
      setserver("")
-   await axios.post('https://trympesa.herokuapp.com//stk/push', {pno,amount}).then((response)=>{
+   await axios.post('https://trympesa.herokuapp.com/stk/push', {pno,amount}).then((response)=>{
      console.log(response)
       if (response.data.message==="Bad Request - Invalid PhoneNumber")
      {
