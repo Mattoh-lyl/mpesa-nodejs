@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+  
+}
+.whole
+
+.App h1{
+  color: green;
+}
+.popup-box
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+}
+.box{ 
+  position: relative;
+width:50%;
+height: 400px;
+background-color: white;
+border: 1px solid rgb(205, 214, 205);
+margin: auto;
+overflow: auto;
+display: flex;
+flex-direction: column;
+justify-items: center;
+align-items: center;
+top: 25%;
+bottom: 52%;
+}
+.close-btn
+{
+  cursor: pointer;
+  border-radius: 50%;
+  border:none;
+ background-color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+ 
+}
+.formdata
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+ width: 300px;
+ height: 320px;
+ /* border: 2px solid rgb(8, 235, 26); */
+  justify-content: space-around;
+  flex-direction: column ;
+  
+}
+.formdata input
+{
+  background-color:white;
+  font-weight: bold;
+  padding: 5px;
+  margin: 10px;
+}
+.image{
+  width: 200px;
+}
+.formdata p{
+  font-weight: bold;
+}
+.formdata button{
+background-color: rgb(8, 235, 8);
+font-weight: bold;
+border-radius: 4px;
+}
+.formdata button:hover{
+color: white;
+
+}
+.error
+{
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (max-width:700px) {
+  
+.image
+{
+  width: 100px;
+}
+.logo img
+{
+  width: 200px;
+}
+  .box{ 
+    
+  width:70%;
+  height: 320px;
+  align-items: center;
+  top: 25%;
+  bottom: 52%;
+  }
+  
+  .formdata
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+ width: 200px;
+ height: 250px;
+ /* border: 2px solid rgb(8, 235, 26); */
+  justify-content: space-around;
+  flex-direction: column ;
+  
+}
+.close-btn
+{
+  
+  margin-bottom: 5px;
+  font-weight: bold;
+ 
+}
+.formdata p{
+  font-weight: bold;
+  
+}
+  .formdata input
+{
+  
+  padding: 2px;
+  margin: 7px;
+}
+}
+
+
