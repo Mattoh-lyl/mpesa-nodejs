@@ -96,7 +96,7 @@ The method defined is experted to the mpesa routes where it corressponds to the 
 
 }).catch((error)=>
 {
-    
+    console.log(error)
     res.json({"message" : error.response.data.errorMessage})
     }) ;
 
