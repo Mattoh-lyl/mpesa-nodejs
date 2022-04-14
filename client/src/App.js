@@ -68,8 +68,6 @@ setserver('! Enter a valid amount')
  <button type='submit'>PAY VIA M-PESA</button>
  </div>
 
- 
- 
 </form>
 
 </div>}
