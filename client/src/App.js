@@ -2,17 +2,13 @@
 import './App.css';
 import {useState} from 'react'
 import axios from 'axios'
-import  Popup from './popup'
+
 
 function Myform() {
 const [pno, setpno]=useState("")
 const [server, setserver]=useState("")
-const [isopen, setisopen]=useState(false);
 const [amount, setAmount]=useState("");
-const togglepopup=()=>
-{
- setisopen(!isopen)
-}
+
  async function postname(e)
 
  {
@@ -34,7 +30,7 @@ setserver('! Enter a valid amount')
      {
        setpno("");
        setAmount("");
-       togglepopup();
+       
        
      } 
      
@@ -42,39 +38,39 @@ setserver('! Enter a valid amount')
  } }
  return(
 <div className="App">
+
   
- <h1>CLICK TO DEPOSIT</h1>
- <div  className='logo'>
-   <img src='logo.svg'></img>
- </div>
-<button  className='button' onClick={togglepopup}>Click to Deposit</button>
-{isopen && <Popup 
- handleClose={
-   
-  togglepopup}
- content={<div >
+     <nav><h1> DEPOSIT</h1></nav>
+    
+ 
+  <div className='body'>
+   <img src='log.jpg'></img>
    <p className='error' >{server}</p>
+ <div className='form'>
+
+  
    <form className='formdata' onSubmit={postname }>
    
-   <div>
-     <p>Enter the Mpesa number starting with country code</p>
-     <img src='mpesa.png' className='image'></img><br></br>
-     <label> M-PESA Number</label>
-      <input type="number" maxLength="12" minLength="12" placeholder='2547XXXXXXXX'   value={pno} name="pno" onChange={(e)=>setpno(e.target.value)}
- required></input><br></br>
- <label>Amount</label><br></br>
- <input type="number"   required placeholder='Amount(ksh)'   value={amount} name="amount" onChange={(e)=>setAmount(e.target.value)}
- ></input>
- <button type='submit'>PAY VIA M-PESA</button>
+   
+   
+     
+   <div className='form-group'>
+      <input id="pno"  className='form-control' type="number" maxLength="12" minLength="12"   placeholder='Phone Number'   value={pno} name="pno" onChange={(e)=>setpno(e.target.value)}
+ required></input>
+ <label for="pno" className='form-label' >Phone Number</label>
  </div>
+ <div  className='form-group'>
+ <input type="number"  id="amount"  className='form-control' required  placeholder='Amount'  value={amount} name="amount" onChange={(e)=>setAmount(e.target.value)}>
+   </input> <label for="amount" className='form-label'>Amount</label>
+ </div>
+<div><button type='submit' className='button'>Initiate</button></div>
+ 
+ 
 
 </form>
+</div>
+</div>
 
-</div>}
- />}
-
- 
- 
 </div>
  );
 }
