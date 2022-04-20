@@ -66,6 +66,8 @@ img
   transform: translate( 10px ,-24px);
   transform-origin: 0 0;
   transition: all .3s;
+  color: transparent;
+
 }
 
 .form-control
@@ -78,12 +80,13 @@ img
   transition: all .5s;
   align-items: center;
 }
-.form-control::placeholder
+/* .form-control::placeholder
 {
-  color: transparent;
-}
+ color: black; 
+} */
 .form-control:focus
 {
+  border: 2px solid purple;
   border-color: purple;
 }
 
@@ -102,14 +105,17 @@ img
 }
 .button
 {
+  margin-top: 30px;
   background-color:rgb(48, 48, 245) ;
   color: white;
   width: 300px;
   height: 35px;
-  border-radius: 10px;
-  font-size: 25px;
+  border-radius: 25px;
+  font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+padding: 25px 0;
+text-align: center;
+line-height: 7px;
 }
 .error
 {
@@ -127,7 +133,7 @@ img
   } 
   .form-control
 {
-  border: 1px solid black;
+  border: 1px solid purple;
   width: 220px;
   height: 35px;
   border-radius: 10px;

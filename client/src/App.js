@@ -55,7 +55,7 @@ setserver('! Enter a valid amount')
    
      
    <div className='form-group'>
-      <input id="pno"  className='form-control' type="number" maxLength="12" minLength="12"   placeholder='Phone Number'   value={pno} name="pno" onChange={(e)=>setpno(e.target.value)}
+      <input id="pno"  className='form-control' type="number" maxLength="12" minLength="12"   placeholder='254XXXXXXXXX'   value={pno} name="pno" onChange={(e)=>setpno(e.target.value)}
  required></input>
  <label for="pno" className='form-label' >Phone Number</label>
  </div>
