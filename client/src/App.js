@@ -2,7 +2,7 @@
 import './App.css';
 import {useState} from 'react'
 import axios from 'axios'
-
+import swal from 'sweetalert';
 
 function Myform() {
 const [pno, setpno]=useState("")
@@ -23,11 +23,17 @@ setserver('! Enter a valid amount')
      console.log(response)
       if (response.data.message==="Bad Request - Invalid PhoneNumber")
      {
-       setserver("Please Check on your number")
+       setserver("! Please Check on your number")
 
      }
     if(response.data.ResponseDescription==="Success. Request accepted for processing")
      {
+      swal({
+        title: "Good job!",
+        text: "Request sent for processing",
+        icon: "success",
+        button: "Close",
+      });
        setpno("");
        setAmount("");
        
