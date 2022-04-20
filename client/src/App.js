@@ -29,7 +29,7 @@ setserver('! Enter a valid amount')
     if(response.data.ResponseDescription==="Success. Request accepted for processing")
      {
       swal({
-        title: "Good job!",
+        title: "Success!",
         text: "Request sent for processing",
         icon: "success",
         button: "Close",
