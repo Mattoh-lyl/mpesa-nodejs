@@ -37,9 +37,13 @@ setserver('! Enter a valid amount')
         text: "Request sent for processing",
         icon: "success",
         button: "Close",
+      }).then((okey)=>{
+        if(okey)
+        { window.location.reload(false);}
+       
       });
 
-      window.location.reload(false);
+      
     
      } 
      
