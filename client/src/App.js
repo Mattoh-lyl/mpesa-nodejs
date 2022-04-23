@@ -53,7 +53,7 @@ setserver('! Enter a valid amount')
 <div className="App">
 
   
-     <nav><h1> DEPOSIT</h1></nav>
+     <nav><h2> DEPOSIT via M-PESA</h2></nav>
     
  
   <div className='body'>
@@ -99,7 +99,7 @@ setserver('! Enter a valid amount')
    </input> */}
     <label for="amount" className='form-label'>Amount</label>
  </div>
-<div><button type='submit' className='button'>Initiate</button></div>
+<div><button type='submit' className='button'>Deposit</button></div>
  
  
 

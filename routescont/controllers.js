@@ -78,7 +78,7 @@ The method defined is experted to the mpesa routes where it corressponds to the 
        PartyA:pno,    
         PartyB:'174379',    
       PhoneNumber:pno,    
-      CallBackURL:"https://trympesa.herokuapp.com//callback",// callback url, your are supposed to use your domain url
+      CallBackURL:"https://trympesa.herokuapp.com/callback",// callback url, your are supposed to use your domain url
       // the /callback is the url to recieve the safariom response about the transaction
       
       AccountReference:"mpesa app payment test",    
@@ -109,13 +109,13 @@ it must be defined after the domain url as show on the pravious step.
 module.exports.callback=async (req,res)=>
 {
 console.log('-------------------------Stk---------')
-if(req.body.Body. stkCallback.ResultDesc==="Request cancelled by user")// this  response shows when the request is cancelled by the client
+if(req.body.Body.stkCallback.ResultDesc==="Request cancelled by user")// this  response shows when the request is cancelled by the client
 {
     console.log(req.body)
 }
 else{
     console.log(req.body.Body.stkCallback.CallbackMetadata)// the callbackmetadata is an object with all information about the transaction
-    var transactiondetails=new usermodel(
+    var transactiondetails = new usermodel(
         {
             Transactioncode: req.body.Body.stkCallback.CallbackMetadata.Item[1].Value,
             Amount: req.body.Body.stkCallback.CallbackMetadata.Item[0].Value,
