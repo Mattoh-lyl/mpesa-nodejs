@@ -4,7 +4,7 @@ import {useState} from 'react'
 import axios from 'axios'
 import swal from 'sweetalert';
 import PhoneInput from 'react-phone-input-2'
- import 'react-phone-input-2/lib/style.css'
+  import 'react-phone-input-2/lib/style.css'
 import CurrencyInput from 'react-currency-input-field';
 
 
@@ -34,7 +34,7 @@ setserver('! Enter a valid amount')
      {
       swal({
         title: "Success!",
-        text: "Request sent for processing",
+        text: "Payment information sent to +"+ pno,
         icon: "success",
         button: "Close",
       }).then((okey)=>{
@@ -70,18 +70,27 @@ setserver('! Enter a valid amount')
    <div className='form-group'>
    <PhoneInput
   country={'ke'}
-  enableAreaCodeStretch={true}
+  containerStyle={{
+    width:"280px"
+  }}
+
+   inputStyle={{width : "280px"}
+    
+  }
+  
   value={pno}
   disableDropdown={true}
   onChange={setpno}
   onlyCountries={['ke']}
-  id="pno"  className='form-control' type="text"   placeholder="Phone Number"   name="pno" 
+  id="pno"  
+  className="form-control"
+   type="text" 
+  
+  // name="pno" 
  required
-//  disableDropdown={true}
  countryCodeEditable={false}
 > </PhoneInput>
-      {/* <input id="pno"  className='form-control' type="number" maxLength="12" minLength="12"   placeholder='254XXXXXXXXX'   value={pno} name="pno" onChange={(e)=>setpno(e.target.value)}
- required></input> */}
+    
  <label for="pno" className='form-label' >Phone Number</label>
  </div>
  <div  className='form-group'>
