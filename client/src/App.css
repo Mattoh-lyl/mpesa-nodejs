@@ -136,7 +136,7 @@ line-height: 5px;
 }
 .error
 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: red;
   font-weight: bold;
 }
@@ -162,7 +162,7 @@ transform: none;
   {
     height: 110px;
     width: 120px;
-    margin-top: 20px;
+    margin-top: 10px;
   } 
   .form-control
 {
