@@ -3,7 +3,7 @@ body{
 
   padding: 0;
  color: white;
- background-color: skyblue;
+ background-color: rgb(175, 225, 245);
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -137,6 +137,7 @@ img
   padding:10px 0;
   border-radius: 20px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .error
 {
