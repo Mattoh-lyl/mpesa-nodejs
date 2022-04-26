@@ -19,6 +19,7 @@ const [amount, setAmount]=useState("");
    e.preventDefault();
    if(amount<=0)
    {
+
 setserver('! Enter a valid amount')
    }
    else{
@@ -29,11 +30,16 @@ setserver('! Enter a valid amount')
      {
        setserver("! Please Check on your number")
 
+
+     }
+     if(  response.data.message==="Bad Request - Invalid Amount")
+     {
+      setserver('! Enter a valid amount')
      }
     if(response.data.ResponseDescription==="Success. Request accepted for processing")
      {
 var fpno=pno.substring(0, 6)
-var rpno=pno.substring(10, )
+
 
       swal({
         title: "Success!",
