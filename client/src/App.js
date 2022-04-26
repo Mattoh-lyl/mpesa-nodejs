@@ -36,7 +36,7 @@ var npno=pno.substring(0, 5)
 
       swal({
         title: "Success!",
-        text: "Payment information sent to +"+ npno +"XXXXXXX"+" kindly complete transaction on your phone",
+        text: "Payment information sent to +"+ npno +"xxxxxx"+" kindly complete transaction on your phone",
         icon: "success",
         button: "Close",
       }).then((okey)=>{
