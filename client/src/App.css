@@ -102,7 +102,7 @@ img
   height: 35px;
   border-radius: 7px;
   font-size: 20px;
-  transition: all .5s;
+  /* transition: all .5s; */
   align-items: center;
 }
 /* .form-control::placeholder
@@ -111,8 +111,9 @@ img
 } */
 .form-control:focus
 {
-  border: 2px solid purple;
-  border-color: purple;
+  border: 1px solid purple;
+  outline:  purple;
+  
 }
 
 .form-control:focus + .form-label,
