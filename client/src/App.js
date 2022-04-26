@@ -74,7 +74,12 @@ setserver('! Enter a valid amount')
     width:"280px"
   }}
 
-   inputStyle={{width : "280px"}
+   inputStyle={{
+     width : "280px"
+    
+
+  }
+   
     
   }
   
@@ -108,9 +113,9 @@ setserver('! Enter a valid amount')
    </input> */}
     <label for="amount" className='form-label'>Amount</label>
  </div>
-<div><button type='submit' className='button'>Deposit</button></div>
+
  
- 
+<button type='submit' className='btn' >Deposit</button>
 
 </form>
 </div>
