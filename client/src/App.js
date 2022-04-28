@@ -38,12 +38,12 @@ setserver('! Enter a valid amount')
      }
     if(response.data.ResponseDescription==="Success. Request accepted for processing")
      {
-var fpno=pno.substring(0, 6)
+
 
 
       swal({
         title: "Success!",
-        text: "Payment information sent to +"+ fpno +"xxxxxx"+" kindly complete transaction on your phone",
+        text: "Payment information sent to +"+ pno +" kindly complete transaction on your phone",
         icon: "success",
         button: "Close",
       }).then((okey)=>{
