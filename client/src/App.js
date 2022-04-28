@@ -109,14 +109,15 @@ setserver('! Enter a valid amount')
  </div>
  <div  className='form-group'>
    <CurrencyInput
-      id="amount"  className='form-control' required  placeholder='KES'
+      id="amount"  className='form-control' required  placeholder='KES 0.00'
     value={amount}
     onValueChange={setAmount}
    intlConfig={{ locale: 'sw-KE', currency: 'KES' }}
    decimalSeparator="." groupSeparator=","
    allowNegativeValue={false}
    disableAbbreviations={false}
-  
+ 
+  allowDecimals={true}
    ></CurrencyInput>
  {/* <input type="number"  id="amount"  className='form-control' required  placeholder='Amount'  value={amount} name="amount" onChange={(e)=>setAmount(e.target.value)}>
    </input> */}
