@@ -1,7 +1,8 @@
+require('dotenv').config();
+
 const mongoose=require('mongoose');
 function urls(){
-   
-const url='mongodb+srv://Moses:moses2339@cluster0.ktady.mongodb.net/newmpesa?retryWrites=true&w=majority';
+   const url =process.env.MONGOURL;
 mongoose.connect(url).then((db)=>{
 
   console.log  ('MONGODB CONNECTION ESTABLISHED!');
