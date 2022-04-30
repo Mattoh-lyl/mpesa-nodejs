@@ -3,10 +3,10 @@ const usermodel=require('../usermodel');
 // variable defination
 const axios=require('axios');
 const { response } = require('express');
-const PASSKEY='bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';
-const SHORTCODE=174379;
-const CONSUMERKEY='YpfDog9RRXeOONuAAFNo4dIZGo1rglh7';
-const CONSUMERSECRET='Gd9M6oNJHQNjE8XG';
+const PASSKEY=process.env.PASSKEY;
+const SHORTCODE=process.env.SHORTCODE;
+const CONSUMERKEY=process.env.CONSUMERKEY;
+const CONSUMERSECRET=process.env.CONSUMERSECRET;
 
 
 //date and time function required to create a password in the format recommended by safaricom

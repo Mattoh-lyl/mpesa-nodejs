@@ -7,7 +7,7 @@
     "start": "nodemon index.js",
     "heroku-postbuild": "cd client && npm install --only=dev --legacy-peer-deps  --no-shrinkwrap && npm run build"
   },
-  "author": "moses",
+  "author": "martin",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.26.1",
